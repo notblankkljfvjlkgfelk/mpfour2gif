@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MP4 to GIF Converter (30 FPS)</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding: 2rem;
+    }
+    #loader {
+      display: none;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>MP4 to 30 FPS GIF</h1>
+  <input type="file" id="videoInput" accept="video/mp4"><br><br>
+  <button onclick="convertToGIF()">Convert to GIF</button>
+  <div id="loader">Processing...</div>
+  <div id="result"></div>
+
+  <script src="https://unpkg.com/@ffmpeg/ffmpeg@0.12.6/dist/ffmpeg.min.js"></script>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
